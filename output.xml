@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221118 17:52:07.463" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginTest" source="c:\Users\Admin\Desktop\robotframeworkPOM\Testcases\LoginTest.robot">
+<test id="s1-t1" name="LoginTest" line="10">
+<kw name="ouvrir le navigateur" library="LoginKeyWords">
+<arg>${url}</arg>
+<arg>${navigateur}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 17:52:07.681" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20221118 17:52:07.680" endtime="20221118 17:52:11.008"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 17:52:11.009" endtime="20221118 17:52:11.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221118 17:52:13.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221118 17:52:11.135" endtime="20221118 17:52:13.137"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:07.680" endtime="20221118 17:52:13.137"/>
+</kw>
+<kw name="saisir nom utlisateur" library="LoginKeyWords">
+<arg>${userNAme}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 17:52:13.139" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20221118 17:52:13.138" endtime="20221118 17:52:13.206"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:13.138" endtime="20221118 17:52:13.206"/>
+</kw>
+<kw name="saisir le mot de passe" library="LoginKeyWords">
+<arg>${password}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${txt_loginPassWord}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221118 17:52:13.207" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20221118 17:52:13.243" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221118 17:52:13.292" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221118 17:52:13.207" endtime="20221118 17:52:13.292"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:13.207" endtime="20221118 17:52:13.293"/>
+</kw>
+<kw name="cliquer sur le bouton Login" library="LoginKeyWords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221118 17:52:13.294" level="INFO">Clicking button 'xpath://button'.</msg>
+<status status="PASS" starttime="20221118 17:52:13.293" endtime="20221118 17:52:13.349"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:13.293" endtime="20221118 17:52:13.349"/>
+</kw>
+<kw name="valider le succes du login" library="LoginKeyWords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221118 17:52:15.229" level="INFO">Page title is 'OrangeHRM'.</msg>
+<status status="PASS" starttime="20221118 17:52:13.350" endtime="20221118 17:52:15.231"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:13.350" endtime="20221118 17:52:15.231"/>
+</kw>
+<kw name="fermer les fenetres des navigateurs" library="LoginKeyWords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221118 17:52:15.234" endtime="20221118 17:52:17.345"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:15.232" endtime="20221118 17:52:17.346"/>
+</kw>
+<status status="PASS" starttime="20221118 17:52:07.678" endtime="20221118 17:52:17.347"/>
+</test>
+<status status="PASS" starttime="20221118 17:52:07.469" endtime="20221118 17:52:17.348"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
